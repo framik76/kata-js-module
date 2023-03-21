@@ -17,8 +17,8 @@ map.set(1000, "M");
 
 export function convert(number) {
     let romanNumber = "";
-    var reservedMap = new Map([...map.entries()].reverse());
-    for (const [key, value] of reservedMap.entries()) {
+    var reversedMap = new Map([...map.entries()].reverse());
+    for (const [key, value] of reversedMap.entries()) {
         let divisor = key
         let remainingValue = 0
         if (number % divisor === 0) {
